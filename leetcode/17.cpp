@@ -33,12 +33,14 @@ private:
       ans.push_back(output);
       return;
     }
+    // this will give the character in the string digits
     int number = digits[index] - '0';
     string value = mapping[number];
 
     for (size_t i = 0; i < value.length(); i++) {
       output.push_back(value[i]);
       solve(digits, output, index + 1, ans, mapping);
+      // this is important stuff as its the line used for backtracking
       output.pop_back();
     }
   }
