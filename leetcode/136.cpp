@@ -20,6 +20,9 @@
 // Input: nums = [1]
 // Output: 1
 
+// Approach
+// a) 0^n=n
+// b) n^n=0
 class Solution {
 public:
   int singleNumber(vector<int> &nums) {
