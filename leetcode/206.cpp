@@ -16,7 +16,6 @@
 
 // Input: head = []
 // Output: []
-
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -35,10 +34,9 @@ public:
 
     ListNode *curr = head;
     ListNode *prev = NULL;
-    ListNode *next = NULL;
 
     while (curr->next != NULL) {
-      next = curr->next;
+      ListNode *next = curr->next;
       curr->next = prev;
       prev = curr;
       curr = next;
